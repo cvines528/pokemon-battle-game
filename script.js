@@ -4,6 +4,8 @@ let venasaur;
 let charizard;
 let blastoise;
 
+let grass =1, fire =2, water = 3;
+
 // let i = 1
 const fetchPokemon = async () => {
     for(let i=1; i <= numOfPokemon; i++) {
@@ -34,6 +36,13 @@ function PokemonBattleStat(name, picture, type, hp, attack, defense) {
     this.hp = hp;
     this.attack= attack;
     this.defense= defense;
+
+
+    //attempting to generate unique border for each card depending on type.
+    //not sure what type's relationship to the current set of IDs is.
+    // if(type == 1){
+    //     document.getElementById('pokemon').style.borderImage = url(pictures/leaf.jpg) round;
+    // }
 };
 function createPokemonCard(pokemon) {
     const pokemonEl = document.createElement('div');
@@ -50,6 +59,9 @@ function createPokemonCard(pokemon) {
     pokemonEl.appendChild(picture);
 
 }
+
+//creating an "info card" that pops up over each with 
+//info on that selection would be cool
 
 fetchPokemon();
 
