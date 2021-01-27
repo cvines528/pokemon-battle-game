@@ -13,19 +13,19 @@
     text-align: center;
 }
 
+/* Turned off border. Want to implement in js. */
 .pokemon{
     display: flex;
     flex-direction: column;
     margin: auto;
     margin-bottom: 25px;
-    border: 13px solid transparent;
-    border-image: url(pictures/leaf.jpg) 30 round;
+    /* border: 13px solid transparent; */
+    /* border-image: url(pictures/leaf.jpg) 30 round; */
 }
 
 :hover.pokemon{
     cursor: pointer;
 }
-
 
 
 .picture{
