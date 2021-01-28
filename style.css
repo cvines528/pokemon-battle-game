@@ -1,0 +1,47 @@
+
+.player-select-screen{
+    margin: 0;
+    padding: 0;
+}
+.player-options{
+    display: flex;
+    flex-direction: column;
+}
+
+#iChooseYou{
+    font-size: 20px;
+    text-align: center;
+}
+
+/* Turned off border. Want to implement in js. */
+.pokemon{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    margin-bottom: 25px;
+    /* border: 13px solid transparent; */
+    /* border-image: url(pictures/leaf.jpg) 30 round; */
+}
+
+:hover.pokemon{
+    cursor: pointer;
+}
+
+
+.picture{
+    margin:0;
+    width: 100px;
+    height: 100px;
+}
+
+:hover>img{
+transition: width 1s, height 1s;
+width:200px;
+height:200px;
+}
+
+
+.name{
+    margin:auto;
+    font-size: 10px;
+}
